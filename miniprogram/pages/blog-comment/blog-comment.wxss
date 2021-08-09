@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+}
+.tab-item {
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  color: #607B8B;
+  border-bottom: 2rpx solid #f1f1f1;
+  background-color: #fff;
+  padding: 20rpx;
+}
+.comment-list {
+  background: #fff;
+}
+.comment {
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.comment-title {
+  position: relative;
+  width: 100%;
+}
+.comment-portrait {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+.comment-nickname {
+  font-size: 40rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  position: absolute;
+  left: 130rpx;
+  top: 26rpx;
+}
+.comment-content {
+  margin: 20rpx;
+}
+.comment-time {
+  font-size: 26rpx;
+  margin: 20rpx;
+}
+.blog-ctrl {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

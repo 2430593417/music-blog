@@ -1,0 +1,21 @@
+<view class="ctrl">
+  <view class="ctrl-item" bind:tap="onComment">
+    <i class="iconfont icon-pinglun icon"></i>
+    <text>评论</text>
+  </view>
+  <view class="ctrl-item share">
+    <button open-type="share" data-blogid="{{blogId}}" data-blog="{{blog}}" class="share-btn" hover-class="share-hover">    <!--因为小程序规定分享功能只能放在button里面，设置open-type="share"才能分享，会触发page的onShareAppMessage方法-->
+      <i class="iconfont icon-fenxiang icon"></i>
+      <text>分享</text>
+    </button>
+  </view>
+</view>
+
+<x-login modalShow="{{loginShow}}"/>
+
+<x-bottom-modal modalShow="{{modalShow}}">
+  <form slot="modal-content" report-submit="true" bind:submit="onSend">  <!--reportsubmit为true才能启用模板消息，从button的onsend方法那里移植到bind:submit="onSend"-->
+    <textarea name="content" class="comment-content" placeholder="请写下你想说的内容" value="{{content}}" fixed="true"></textarea> <!--不加fixed会随着页面滚动而滚动-->
+    <button class="send" form-type="submit">发送</button>  <!--formtype规定了它为提交-->
+  </form>
+</x-bottom-modal>

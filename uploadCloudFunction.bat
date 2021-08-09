@@ -1,0 +1,1 @@
+"G:\微信开发者工具\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-6gr82kzi3bbc30e0 --n quickstartFunctions --r --project "C:\Users\Administrator\Desktop\music-imooc" --report

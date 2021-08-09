@@ -1,0 +1,90 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/getOpenId/index",
+          "pathName": "pages/getOpenId/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/deployService/index",
+          "pathName": "pages/deployService/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/selectRecord/index",
+          "pathName": "pages/selectRecord/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sumRecordResult/index",
+          "pathName": "pages/sumRecordResult/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecord/index",
+          "pathName": "pages/updateRecord/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecordResult/index",
+          "pathName": "pages/updateRecordResult/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecordSuccess/index",
+          "pathName": "pages/updateRecordSuccess/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/player/player",
+          "pathName": "pages/player/player",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/blog/blog",
+          "pathName": "pages/blog/blog",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/blog-comment/blog-comment",
+          "pathName": "pages/blog-comment/blog-comment",
+          "query": "blogid=79550af260fa298428c203c402f1a0f9",
+          "scene": null
+        },
+        {
+          "name": "pages/profile/profile",
+          "pathName": "pages/profile/profile",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

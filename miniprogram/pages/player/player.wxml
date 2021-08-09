@@ -1,0 +1,21 @@
+<view class="player-container" style="background:url({{picUrl}}) center/cover no-repeat"></view>
+<view class="player-mask"></view>
+
+<view class="player-info">
+  <view class="player-disc {{isPlaying?'play':''}}" bind:tap="onChangeLyricShow" hidden="{{isLyricShow}}">
+    <image class="player-img rotation {{isPlaying?'':'rotation-paused'}}" src="{{picUrl}}"></image>
+  </view>
+</view>
+
+<x-lyric class="lyric" isLyricShow="{{!isLyricShow}}" bing:tap="onChangeLyricShow" lyric="{{lyric}}"/>   <!--islyricshow是将它islyricshow这个属性传去子组件-->
+
+<view class="progress-bar">
+  <x-progress-bar bind:musicEnd="onNext" bind:timeUpdata="timeUpdate" bind:musicPlay="onPlay" bind:musicPause="onPause" isSame="{{isSame}}"/>  <!--这里bind:musicEnd的musicend是子组件触发了一个musicend事件，父组件通过bind调用了onnext方法，这样子组件就可以使用父组件的方法了-->
+</view> <!--timeupdate实现组件传值-->
+
+<view class="control">
+  <text class="iconfont icon-shangyishoushangyige" bind:tap="onPrev"></text>
+  <text class="iconfont {{isPlaying?'icon-ico_zanting_xuanzhong':'icon-bofang'}}" bind:tap="togglePlaying"></text>
+  <text class="iconfont icon-xiayigexiayishou" bind:tap="onNext"></text>
+</view>
+
